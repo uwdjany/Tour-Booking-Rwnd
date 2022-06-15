@@ -1,0 +1,20 @@
+
+.contact__form .form-control{
+padding: 1.375rem .75rem;
+line-height: 1.5;
+color: white;
+background-color: black;
+border-radius: 0 !important;
+}
+.contact__form input.form-control{
+    margin-bottom: 2em;
+    height: calc(2.5em + .75rem +2px);
+
+}
+.btn{
+    color: lightblue;
+    
+}
+.btn:hover{
+    color: black;
+}

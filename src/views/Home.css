@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.home-container{
+    background-image:
+    url("../assets/image/lake.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: cover;
+    
+    
+}
+.heading-title{
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+    text-shadow: 3px 5px 5px black;
+    text-align: center;
+ padding-top: 1.2rem; 
+    background-image: linear-gradient(to bottom,rgb(8, 183, 241),black);
+    -webkit-background-clip:text;
+    background-color: rgb(177, 177, 165);
+    
+}
+.carousel-img{
+    width: 40%;
+    margin: 0 auto; 
+
+}
+.carousel-img img{
+   height: 320px;
+   /* margin-bottom: 1rem; */
+}
+.topTour{
+    color:white;
+    font-size:3rem;
+    text-align:center;
+    font-weight:500;
+    margin-top: 0.8rem;
+    margin-bottom: -0.8rem;
+}
+.align{
+    background: rgb(8, 183, 241);
+    height: 0.8rem;
+    color: green;
+    width: 5rem;
+    border: none;
+    margin-left: 46%;
+    margin-top: 0;
+    line-height: -4rem;
+align-items: center;
+
+}

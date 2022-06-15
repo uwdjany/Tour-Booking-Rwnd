@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.footer-container{
+    background:black;
+    padding: 4.4rem;
+    display: grid;
+    grid-template-columns: 25% 20% 20% 20% 15%;
+    color: black;
+    
+
+}
+.logo-img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+p span{
+    display: block;
+}
+.footer-title{
+    color: #eee;
+    font-size: 2.4rem;
+}
+.icons{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    color: white;
+    font-size: 2rem;
+    color: #ddd;
+}
+.copyright , 
+.contactus-column p
+{
+    color: #ddd;
+    font-size: 1.2rem;
+}
+.footer-container a:link, 
+.footer-container a:visited{
+    color: #eee;
+
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 76.4%;
+}
+.container-one{
+ background-image: url("../assets/image/mountain.jpg");
+   background-repeat: no-repeat;
+   /* width: 100%; */
+   height: 100vh;
+   background-size: cover;
+   object-fit: cover;
+   
+}
+.some-content{
+    padding: 70px;
+}
+/* .image{
+   width:80%;
+   height:50vh;
+   object-fit: cover;
+   background-repeat: no-repeat;
+
+} */
+.img{
+    width: 100%;
+    height: 200vh;
+
+    
+    
+}
+.heading{
+    font-weight: 900;
+    font-size: 5rem;
+    text-align: center;
+}
+p{
+    color: lightblue;
+    text-align: center;
+}

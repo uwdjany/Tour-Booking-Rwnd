@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.navu{
+    display: flex;
+    justify-content: space-between;
+     /* padding: 1.8rem 2.4rem; */
+  
+    align-items: center;
+    padding: 0.8rem ;
+    /* border-bottom: solid 5px lightblue; */
+   
+   
+   height: 100px;
+     background-color: black; 
+    
+    
+    
+    
+    
+    
+}
+.logo-img{
+    width: 10px;
+    object-fit: cover;
+    height: 80px;
+   
+}
+.nav-links{
+display: flex;
+font-size: 2rem;
+list-style-type: none;
+gap: 3rem;
+color: black;
+
+
+
+}
+
+.nav-link:link,
+.nav-link:visited{
+    font-size: 2rem;
+    text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:active
+{
+    color:black;
+}
+.link-green:link,
+.link-green:visited{
+    color: rgb(6, 172, 228);
+}
+.link-green:hover,
+.link-green:active{
+    color:black;
+
+}
+.btn-link:link,
+.btn-link:visited
+
+{
+    background:rgb(6, 172, 228);
+    padding: 1.2rem 2.2rem;
+    box-shadow: 0px 10px 10px black;
+    border-radius: 0.2rem;
+
+
+}
+.btn-link:hover,
+.btn-link:active{
+    color: white;
+    background: black;
+
+}
+.nav-link{
+    color: white;
+}
+.navbar{
+    height: 50px;
+    
+}
