@@ -3,9 +3,7 @@ import { Button,Card,Space,Carousel} from 'antd';
 import image from '../assets/image/gorilla.jpg'
 import { getOverlayDirection } from 'react-bootstrap/esm/helpers';
 
-import gorilla from "../assets/image/gorilla.jpg";
-import lake from "../assets/image/lake.jpg";
-import mount from "../assets/image/mountain.jpg";
+
 const SingleTour =({data})=>{
     const [size, setSize] = useState('large');
 return(
