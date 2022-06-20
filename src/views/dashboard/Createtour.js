@@ -1,5 +1,5 @@
 import React from "react";
-const Form =()=>{
+const Creatf =()=>{
     return(
         <div>
             <h1>helloooooo</h1>
@@ -7,4 +7,4 @@ const Form =()=>{
     )
 }
 
-export default Form;
+export default Creatf;

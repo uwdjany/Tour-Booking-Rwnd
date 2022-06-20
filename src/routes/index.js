@@ -6,17 +6,18 @@ import AboutUs from '../views/About';
 import HomeLayout from '../component/HomeLayout';
 import Tours from '../views/Tours';
 import Contact from '../views/Contact';
-import DashboardLayout from '../component/DashboardLayout'; 
-import App from '../views/dashboard/Alltours';
-import Form from '../views/dashboard/Createtour';
+//import DashboardLayout from '../component/DashboardLayout'; 
+ import App from '../views/dashboard/Alltours';
+// import Form from '../views/dashboard/Createtour';
 import Register from '../component/register';
+import DashboardLayout from '../component/DashboardLayout';
 
 const Index=()=>
 {
    
    return(
   
-    <>
+
   
 
 
@@ -30,19 +31,21 @@ const Index=()=>
      <Route  path='/tours' element= {<Tours/>}></Route>  
      <Route  path='/contact' element= {<Contact/>}></Route>  
      <Route  path='/register' element= {<Register/>}></Route>  
+     {/* <Route exact path='/admin' element= {<App/>}></Route> */}
+     <Route exact path='/admin' element= {<DashboardLayout/>}></Route>
     
 </Routes>
-<DashboardLayout>
+{/* <DashboardLayout>
         <Routes>
     <Route exact path='/admin' element= {<App/>}></Route>
     <Route exact path='/admin-dashboard' element= {<Form/>}></Route>
     </Routes>
-    </DashboardLayout>
+    </DashboardLayout> */}
 </HomeLayout>
 
 
 
-</>
+
     )
 }
 

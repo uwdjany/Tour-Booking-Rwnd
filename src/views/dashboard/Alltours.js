@@ -2,6 +2,10 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import allTours from '../../assets/data/tours.json'
 import { Table } from 'antd';
+import DashboardLayout from '../../component/DashboardLayout'
+
+
+
 const columns = [
   {
     title: 'Name',
@@ -23,7 +27,8 @@ const columns = [
           }
 
     ]
-   
+    
+    
 const App = () => <Table columns={columns} dataSource={allTours}  />;
 
 export default App;

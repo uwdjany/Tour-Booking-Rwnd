@@ -73,7 +73,7 @@ const Nav=()=>{
 
 
 
-   <Button type="primary" onClick={showModal}>
+   <Button type="primary" onClick={showModal} >
         SignUp
       </Button> 
       <Modal

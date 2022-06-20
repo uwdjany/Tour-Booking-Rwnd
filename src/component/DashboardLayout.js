@@ -17,8 +17,9 @@ import {Link} from 'react-router-dom'
 
 const { Header, Sider, Content } = Layout;
 
-const App = ({children}) => {
+const DashboardLayout = ({children}) => {
   const [collapsed, setCollapsed] = useState(false);
+  
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -48,11 +49,14 @@ const App = ({children}) => {
             minHeight: 280,
           }}
         >
+         
            {children}
+           <AllTours/>
+          
         </Content>
       </Layout>
     </Layout>
   );
 };
 
-export default App;
+export default DashboardLayout;
