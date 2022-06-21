@@ -1,10 +1,14 @@
 import React from "react";
-const Creatf =()=>{
+
+const Createtour =()=>{
     return(
+
+    
+    
         <div>
             <h1>helloooooo</h1>
-        </div>
+        </div>  
     )
 }
 
-export default Creatf;
+export default Createtour;

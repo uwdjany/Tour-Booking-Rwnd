@@ -22,7 +22,7 @@ const Tours =()=>{
     const [size, setSize] = useState('large');
 
     const [selectTour,setSelecTour]=useState({});
-const [showDrawer,setShowDrawer]=useState(true);
+const [showDrawer,setShowDrawer]=useState(false);
 
     return(
        

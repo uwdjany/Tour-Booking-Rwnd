@@ -7,10 +7,11 @@ import HomeLayout from '../component/HomeLayout';
 import Tours from '../views/Tours';
 import Contact from '../views/Contact';
 //import DashboardLayout from '../component/DashboardLayout'; 
- import App from '../views/dashboard/Alltours';
+//  import App from '../views/dashboard/Alltours';
 // import Form from '../views/dashboard/Createtour';
 import Register from '../component/register';
 import DashboardLayout from '../component/DashboardLayout';
+import Createtour from '../views/dashboard/Createtour';
 
 const Index=()=>
 {
@@ -33,7 +34,7 @@ const Index=()=>
      <Route  path='/register' element= {<Register/>}></Route>  
      {/* <Route exact path='/admin' element= {<App/>}></Route> */}
      <Route exact path='/admin' element= {<DashboardLayout/>}></Route>
-    
+     <Route exact path='/create' element= {<Createtour/>}></Route>
 </Routes>
 {/* <DashboardLayout>
         <Routes>

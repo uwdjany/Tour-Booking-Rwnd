@@ -12,7 +12,7 @@ import { Layout, Menu } from 'antd';
 import tours from '../assets/data/tours.json'
 import AllTours from '../views/dashboard/Alltours';
 import {Link} from 'react-router-dom'
-
+import Createtour from '../views/dashboard/Createtour';
 
 
 const { Header, Sider, Content } = Layout;
@@ -27,7 +27,8 @@ const DashboardLayout = ({children}) => {
       
         <Link to="/admin">Alltours</Link>
         <br />
-        <Link to="/admin-dashboard">CreateTours</Link>
+         <Link to="/create">CreateTours</Link> 
+        
       </Sider>
       <Layout className="site-layout">
         <Header
@@ -49,12 +50,17 @@ const DashboardLayout = ({children}) => {
             minHeight: 280,
           }}
         >
+           <AllTours/>
          
            {children}
-           <AllTours/>
+          
+
+        
           
         </Content>
+        
       </Layout>
+     
     </Layout>
   );
 };
