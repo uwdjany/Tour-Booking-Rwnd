@@ -1,0 +1,38 @@
+[
+{
+    "name":"djany uwase",
+    "email":"djanatiuwase@gmail.com",
+    "gender":"female",
+    "home":"nyakabanda",
+    "isActive":true,
+    "about":"Le parc national de Nyungwe ou Nyungwe est un massif forestier asud-ouest du Rwanda. Il couvre environ une surface de 970 km².",
+     "phone":"0784875126",
+     "profile":"https://image.similarpng.com/very-thumbnail/2020/12/Pretty-young-muslim-woman-on-transparent-background-PNG.png"
+
+},
+{
+    "name":"sulf Bahati",
+    "email":"djanatiuwase@gmail.com",
+    "gender":"female",
+    "home":"nyakabanda",
+    "isActive":true,
+    "about":"Le parc national de Nyungwe ou Nyungwe est un massif forestier ausud-ouest du Rwanda.Il couvre environ une surface de 970 km².",
+     "phone":"0784875126",
+     "profile":"https://image.similarpng.com/very-thumbnail/2020/12/Pretty-young-muslim-woman-on-transparent-background-PNG.png"
+
+},
+{
+    "name":"hafisa uwase",
+    "email":"djanatiuwase@gmail.com",
+    "gender":"female",
+    "home":"nyakabanda",
+    "isActive":false,
+    "about":"Le parc national de Nyungwe ou Nyungwe est un massif forestier ausud-ouest du Rwanda.Il couvre environ une surface de 970 km².",
+     "phone":"0784875126",
+     "profile":"https://image.similarpng.com/very-thumbnail/2020/12/Pretty-young-muslim-woman-on-transparent-background-PNG.png"
+
+}
+
+
+
+]

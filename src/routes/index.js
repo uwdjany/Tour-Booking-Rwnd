@@ -6,12 +6,15 @@ import AboutUs from '../views/About';
 import HomeLayout from '../component/HomeLayout';
 import Tours from '../views/Tours';
 import Contact from '../views/Contact';
-//import DashboardLayout from '../component/DashboardLayout'; 
-//  import App from '../views/dashboard/Alltours';
-// import Form from '../views/dashboard/Createtour';
+import AdminRoutes from './admin'
 import Register from '../component/register';
-import DashboardLayout from '../component/DashboardLayout';
-import Createtour from '../views/dashboard/Createtour';
+import Managerusers from '../views/admin/Managerusers';
+import ManagerTrip from '../views/admin/ManagerTrip';
+
+import Chartline from '../views/admin/Chartline';
+import Piechart from '../views/admin/Piechart';
+
+
 
 const Index=()=>
 {
@@ -32,16 +35,12 @@ const Index=()=>
      <Route  path='/tours' element= {<Tours/>}></Route>  
      <Route  path='/contact' element= {<Contact/>}></Route>  
      <Route  path='/register' element= {<Register/>}></Route>  
-     {/* <Route exact path='/admin' element= {<App/>}></Route> */}
-     <Route exact path='/admin' element= {<DashboardLayout/>}></Route>
-     <Route exact path='/create' element= {<Createtour/>}></Route>
+    <Route path='/admin/user' element={<Managerusers/>}/>
+    <Route path='/admin/trip' element={<ManagerTrip/>}/>
+    <Route path='/dashboard' element={<Chartline/>}/>
+    <Route path='admin/pie' element ={<Piechart/>}/>
 </Routes>
-{/* <DashboardLayout>
-        <Routes>
-    <Route exact path='/admin' element= {<App/>}></Route>
-    <Route exact path='/admin-dashboard' element= {<Form/>}></Route>
-    </Routes>
-    </DashboardLayout> */}
+
 </HomeLayout>
 
 

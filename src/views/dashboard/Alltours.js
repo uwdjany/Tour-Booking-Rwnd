@@ -1,34 +1,34 @@
-import React from 'react';
-import 'antd/dist/antd.css';
-import allTours from '../../assets/data/tours.json'
-import { Table } from 'antd';
-import DashboardLayout from '../../component/DashboardLayout'
+// import React from 'react';
+// import 'antd/dist/antd.css';
+// import allTours from '../../assets/data/tours.json'
+// import { Table } from 'antd';
+// import DashboardLayout from '../../component/DashboardLayout'
 
 
 
-const columns = [
-  {
-    title: 'Name',
-    dataIndex: 'title',
+// const columns = [
+//   {
+//     title: 'Name',
+//     dataIndex: 'title',
 
 
-    },
-    {
-        title: 'Descrption',
+//     },
+//     {
+//         title: 'Descrption',
         
-        dataIndex:'descrption',
+//         dataIndex:'descrption',
     
-        },
-        {
-          title: 'Dua Date',
+//         },
+//         {
+//           title: 'Dua Date',
           
-          dataIndex:'dueDate',
+//           dataIndex:'dueDate',
       
-          }
+//           }
 
-    ]
+//     ]
     
     
-const App = () => <Table columns={columns} dataSource={allTours}  />;
+// const App = () => <Table columns={columns} dataSource={allTours}  />;
 
-export default App;
+// export default App;

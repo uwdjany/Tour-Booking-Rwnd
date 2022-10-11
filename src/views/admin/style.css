@@ -1,0 +1,31 @@
+.container-card{
+
+margin-top: 8%;
+
+
+
+}
+.container{
+    margin-left: 50%;
+    
+}
+
+.widg{
+    gap: 2rem;
+}
+.widg span{
+    font-size: 4rem;
+    margin: 20px;
+    gap: 2rem;
+
+}
+.span-one{
+    background-color: rgb(57, 144, 198);
+    height: 80px;
+    width: 150px;
+    border: solid 2px black;
+    margin: 10px;
+    box-shadow: 2px 3px 4px black;
+    border-radius: 10px;
+    
+}
