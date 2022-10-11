@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import {Card,Image,Space,Typography,Drawer}from "antd"
 
 import './tour.css'
@@ -6,9 +6,9 @@ import { DownloadOutlined } from '@ant-design/icons';
 import { Button} from 'antd';
 
 import single from '../views/Tours';
-import allTours from '../assets/data/tours.json'
+//  import allTours from '../assets/data/tours.json'
 import SingleTour from '../component/singleTour';
-
+import TourServices from '../services/tourServices';
 const{Text,Title}=Typography
 
   
@@ -19,11 +19,16 @@ const{Text,Title}=Typography
 
 const Tours =()=>{
 
-    const [size, setSize] = useState('large');
-
-    const [selectTour,setSelecTour]=useState({});
+ const [size, setSize] = useState('large');
 const [showDrawer,setShowDrawer]=useState(false);
+const [selectTour,setSelecTour]=useState({});
 
+
+ const [allTours,setAllTours] = useState([]);
+useEffect(()=>{
+    TourServices.getAllTours().then((res) => {setAllTours(res?.data)}); 
+
+},[])
     return(
        
 
@@ -33,11 +38,12 @@ const [showDrawer,setShowDrawer]=useState(false);
 <>
 
 
+
 <div style={{width:'100%',height:'auto', padding:'20px 100px' , textAlign:"center"}}>
 <Card className="card">
 
     
-       {allTours.map ((tour) =>(
+       {allTours.map((tour) =>(
        <Card.Grid style={{width:"30%",minHeight:"30rem"}} className="container-card">
             <Space direction="vertical">
             <Image preview={true} src={tour.photo} />
@@ -63,6 +69,8 @@ const [showDrawer,setShowDrawer]=useState(false);
                 </Space>
             
     </Card.Grid>)) }
+            
+            
 </Card>
 </div>
 

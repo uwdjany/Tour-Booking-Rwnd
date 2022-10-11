@@ -9,26 +9,39 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
-import tours from '../assets/data/tours.json'
-import AllTours from '../views/dashboard/Alltours';
-import {Link} from 'react-router-dom'
-import Createtour from '../views/dashboard/Createtour';
-
+import { useNavigate } from 'react-router-dom';
 
 const { Header, Sider, Content } = Layout;
 
 const DashboardLayout = ({children}) => {
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
-  
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo" />
-      
-        <Link to="/admin">Alltours</Link>
-        <br />
-         <Link to="/create">CreateTours</Link> 
-        
+        <Menu
+          theme="dark"
+          mode="inline"
+          defaultSelectedKeys={['1']}
+          items={[
+            {
+              key: '1',
+              icon: <UserOutlined onClick={()=>navigate('/dashboard')}/>,
+              label:<h4 onClick={()=>navigate('/dashboard ')} style={{color:"white"}}>Dashboard</h4>
+            },
+            {
+              key: '2',
+              icon: <VideoCameraOutlined onClick={()=>navigate('/admin/user')}/>,
+              label: <h4 onClick={()=>navigate('/admin/user')} style={{color:"white"}}>Manager Users</h4>,
+            },
+            {
+              key: '3',
+              icon: <UploadOutlined onClick={()=>navigate('/admin/trip')}/>,
+              label: <h4 onClick={()=>navigate('/admin/trip')} style={{color:"white"}}>Manager Trips</h4>,
+            },
+          ]}
+        />
       </Sider>
       <Layout className="site-layout">
         <Header
@@ -50,17 +63,9 @@ const DashboardLayout = ({children}) => {
             minHeight: 280,
           }}
         >
-           <AllTours/>
-         
-           {children}
-          
-
-        
-          
+          {children}
         </Content>
-        
       </Layout>
-     
     </Layout>
   );
 };
